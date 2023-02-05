@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tex/blahaj.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[node name="blahaj" type="KinematicBody2D"]
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 0.085, 0.085 )
+texture = ExtResource( 1 )
+hframes = 2
